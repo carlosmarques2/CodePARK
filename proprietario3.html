@@ -54,20 +54,21 @@
             </div>
         </div>
     </nav>
-    <div class="qr-code d-print-inline" style="visibility: hidden; height: 155px; width: 155px;">
-        <img src="img/qrcode-1.png" alt="" srcset="">
-    </div>
-    <div class="container mt-4 mb-4 d-print-none">
-        <nav aria-label="breadcrumb">
+
+    <div class="container mt-4 mb-4">
+        <nav class="d-print-none" aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">Principal</a></li>
                 <li class="breadcrumb-item"><a href="proprietarios.html">Proprietários</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Informações do Proprietário</li>
             </ol>
         </nav>
-        <h2 class="h2 mb-3">Proprietário</h2>
+        <h2 class="h2 mb-3 d-print-none">Proprietário</h2>
         <div class="row">
-            <div class="col-12 col-sm-10 col-md-10 col-lg-8">
+            <div class="qr-code d-print-inline" style="height: 155px; width: 155px;">
+                <img src="img/FabioQRCode.PNG" alt="" srcset="">
+            </div>
+            <div class="col-12 col-sm-10 col-md-10 col-lg-8 d-print-none">
                 <div class="card">
                     <div class="card-header">
                         <h5 class="mb-auto">Dados Cadastrais</h5>
@@ -118,7 +119,7 @@
             </div>
         </div>
 
-        <div class="row mt-4">
+        <div class="row mt-4 d-print-none">
             <div class="col-12 col-sm-10 col-md-10 col-lg-8" style="overflow:auto">
                 <div class="card">
                     <div class="card-header">
@@ -192,9 +193,7 @@
     <script src="js/jquery-3.6.4.min.js"></script>
     <script>
         function imprimirQrCode() {
-            $(".qr-code").css("visibility", "visible");
             window.print();
-            $(".qr-code").css("visibility", "hidden");
         }
     </script>
 </body>
