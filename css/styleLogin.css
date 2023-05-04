@@ -1,0 +1,38 @@
+body {
+  background-color: rgb(246, 249, 250);
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 575px) {
+  html,
+  body {
+    height: 100%;
+  }
+  body {
+    background-image: linear-gradient(
+        rgba(246, 249, 250, 1),
+        rgba(246, 249, 250, 0)
+      ),
+      url("../img/img_background.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-color: rgb(246, 249, 250);
+  }
+}
+
+.tituloSite {
+  text-decoration: none;
+  color: black;
+}
+
+.usuario,
+.senham,
+.checkLembrar {
+  text-align: start;
+}
+
+.cardLogin {
+  margin-left: 4px;
+  margin-right: 4px;
+}
